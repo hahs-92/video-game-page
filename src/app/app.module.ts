@@ -22,13 +22,15 @@ import { DetailComponent } from './pages/detail/detail.component'
 //interceptors
 import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor'
 import { HttpHeadersInterceptor} from './interceptors/http-headers.interceptor';
+import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
     HomeComponent,
-    DetailComponent
+    DetailComponent,
+    GameTabsComponent
   ],
   imports: [
     BrowserModule,
