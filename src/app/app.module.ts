@@ -18,14 +18,17 @@ import { MatSelectModule } from '@angular/material/select';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 // pages
 import { HomeComponent } from './pages/home/home.component'
+import { DetailComponent } from './pages/detail/detail.component'
 //interceptors
 import { HttpErrorsInterceptor } from './interceptors/http-errors.interceptor'
-import { HttpHeadersInterceptor} from './interceptors/http-headers.interceptor'
+import { HttpHeadersInterceptor} from './interceptors/http-headers.interceptor';
+
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
-    HomeComponent
+    HomeComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
