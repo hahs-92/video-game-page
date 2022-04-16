@@ -19,8 +19,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   constructor(
     private httpService: HttpService,
-    private activateRoute: ActivatedRoute,
-    private router: Router
+    private activateRoute: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
@@ -44,9 +43,6 @@ export class HomeComponent implements OnInit, OnDestroy {
       })
   }
 
-  openGameDetails(id: string): void {
-    this.router.navigate(['details', id]);
-  }
 
   ngOnDestroy(): void {
     if(this.gameSub) {

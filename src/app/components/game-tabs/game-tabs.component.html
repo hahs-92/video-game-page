@@ -1,5 +1,6 @@
 <section class="game-tabs">
   <mat-tab-group mat-align-tabs="start" backgroundColor="primary">
+
     <mat-tab label="About">
       <p *ngIf="game?.parent_platforms?.length" class="game-tabs-par">
         Platforms:
@@ -33,6 +34,7 @@
         </ng-container>
       </p>
     </mat-tab>
+
     <mat-tab label="Screenshots" *ngIf="game?.screenshots?.length">
       <img
         class="game-screenshot"
@@ -41,6 +43,7 @@
         alt="screenshot"
       />
     </mat-tab>
+
     <mat-tab label="Trailers" *ngIf="game?.trailers?.length">
       <video
         class="game-trailer"
@@ -51,5 +54,6 @@
         Your browser does not support the video tag.
       </video>
     </mat-tab>
+
   </mat-tab-group>
 </section>
